@@ -140,6 +140,7 @@ body{
     width: calc(100vw - 30px);
     border: 1px solid yellow;
     display: flex;
+    overflow: hidden;
 }
 
 .column-name{
@@ -175,7 +176,7 @@ body{
     width: calc(100vw - 30px); 
     height: calc(75vh - 30px);
     border: 1px solid navy;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .cell-row{
@@ -246,4 +247,21 @@ body{
 
 .menu-icon.selected{
     background-color: lightgray;
+}
+
+/* we will give top and left as none because we don't want any borders wheras right and bottom should be given as same colour because they always need to appear.*/
+.input-cell.top-cell-selected{
+    border-top: none;
+}
+
+.input-cell.bottom-cell-selected{
+    border-bottom: 1px solid lightgray;
+}
+
+.input-cell.right-cell-selected{
+    border-right: 1px solid lightgray;
+}
+
+.input-cell.left-cell-selected{
+    border-left: none;
 }
